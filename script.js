@@ -58,8 +58,7 @@ fetch('https://fakestoreapi.com/products')
 let novoProduto = { title: 'bolsa', price : 229.90, descricao: 'bolsa de couro', category: 'acessorios', image: 'https://i.pravatar.cc' }
 
 fetch('https://fakestoreapi.com/products/',
-        {
-            method:"POST",
+        {   method:"POST",
             body:JSON.stringify(novoProduto)
         }).then(res=>res.json())
           .then(json=>console.log(json))
